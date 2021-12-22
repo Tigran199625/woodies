@@ -7,8 +7,6 @@ app.set("view engine", "ejs");
 
 const { mailingUsers } = require('./models')
 
-app.use(express.static(__dirname + 'assets'))
-
 app.get("/", (req, res) => {
     res.render('main')
 })
