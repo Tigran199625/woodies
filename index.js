@@ -11,6 +11,9 @@ app.get("/", (req, res) => {
     res.render('main')
 })
 
+app.use(express.static(__dirname + "/assets"));
+// console.log(__dirname)
+
 app.post("/", urlencodedParser, (req, res) => {
     response = {
         mail : req.body.mail
@@ -25,4 +28,4 @@ mailingUsers.sync().then((data) => {
 });
 
 
-app.listen(3000);
+app.listen(3005);
