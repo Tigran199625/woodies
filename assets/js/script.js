@@ -1,40 +1,3 @@
-// const swiper = new swiper('.swiper','.swiper-slide-image', {
-//     speed: 400,
-//     slidesPerView: 1,
-//     spaceBetween: 10,
-//     // Optional parameters
-//     direction: 'vertical',
-//     loop: false,
-  
-//     // If we need pagination
-//     pagination: {
-//       el: '.swiper-pagination',
-//     },
-  
-//     // Navigation arrows
-//     navigation: {
-//       nextEl: '.swiper-button-next',
-//       prevEl: '.swiper-button-prev',
-//     },
-  
-//     // And if we need scrollbar
-//     scrollbar: {
-//       el: '.swiper-scrollbar',
-//     },
-//   });
-// import Swiper from '/swiper';
-// import '/swiper/css';
-
-
-// new Swiper( '.swiper-slide', {
-//     navigation: {
-//         nextEl: '.swiper-button-next',
-//         prevEl: '.swiper-button-prev',
-//     },
-//     pagination: {
-//        el: '.swiper-pagination',
-//     },
-// });
 let swiper = new Swiper('.swiper', {
     // Optional parameters
     
@@ -58,10 +21,25 @@ let swiper = new Swiper('.swiper', {
     },
   });
   function myFunction() {
-    let x = document.getElementById("myLinks");
-    if (x.style.display === "block") {
+    var x = document.getElementById("myLinks");
+    if (x.style.display === "flex") {
       x.style.display = "none";
     } else {
-      x.style.display = "block";
+      x.style.display = "flex";
     }
+    console.log(x)
+  }
+  var acc = document.getElementsByClassName("accordion");
+  var i;
+
+  for (i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function() {
+      this.classList.toggle("active");
+      var panel = this.nextElementSibling;
+      if (panel.style.display === "block") {
+        panel.style.display = "none";
+      } else {
+        panel.style.display = "block";
+      }
+    });
   }
