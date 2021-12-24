@@ -264,17 +264,77 @@
   }
   .categories{
     padding-top: 120px;
-    &-item{
-      column-gap: 56px;
-      max-width: 952px;
+    .categories-item{
+      display: flex;
+    column-gap: 56px;
+    max-width: 953px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    .yell{
+        background: #F7DEA6;
+    }
+    .blue{
+        background: #A8DCEC;
+    }
+    &-block{
+      background: #F9BDBD;
+      border-radius: 0 100px;
+      margin: 20px 0;
+      max-width: 280px;
       width: 100%;
-      margin-left: auto;
-      margin-right: auto;
-      &-img{
-        padding: 40px 0 40px;
+      &-title{
+        font-family: Nunito;
+        font-style: normal;
+        font-weight: 800;
+        font-size: 24px;
+        line-height: 33px;
+        color: #3E3F43;
+        padding:24px 16px ;
+      }
+      // .table{
+      //   padding-right: 33px;
+      // }
+      // .chair{
+      //   margin: 26px auto 18px;
+      //   padding: 0 57px;
+      // }
+      // .tarelka{
+      //   padding: 43px 50px 36px 50px;
+      // }
+      // .shkaf{
+      //   padding: 22px 66px;
+      // }
+      // .sovet{
+      //   padding: 73px 22px 66.88px 23px;
+      // }
+      .global{
+        margin: 10px auto;
+        height: 235px;
+        display: block;
+        object-fit: none;
+      }
+      .post{
+        padding: 24px 16px;
+        .post-btn{
+          font-family: Nunito;
+          font-style: normal;
+          font-weight: 600;
+          font-size: 18px;
+          line-height: 25px;
+          text-align: center;
+          color: #3E3F43;
+          border: 1px solid #3E3F43;
+          box-sizing: border-box;
+          border-radius: 4px;
+          padding: 8px 19px;
+          display: block;
+          margin-left: auto;
+          cursor: pointer;
+        }
       }
     }
-   
+    }
   }
   .test{
     padding-top: 144px;
@@ -707,9 +767,11 @@
         color: #333333;
         padding: 18px;
         align-items: center;
+        cursor: pointer;
         summary{
           display: block !important;
           padding: 0 18px;
+          font-size: 20px;
         }
         summary:hover{
           background-color: #ddd;
