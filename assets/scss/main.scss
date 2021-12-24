@@ -707,9 +707,11 @@
         color: #333333;
         padding: 18px;
         align-items: center;
+        cursor: pointer;
         summary{
           display: block !important;
           padding: 0 18px;
+          font-size: 20px;
         }
         summary:hover{
           background-color: #ddd;
