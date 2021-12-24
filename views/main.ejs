@@ -20,32 +20,30 @@
 				<nav>
 					<div class="topnav nav grid-x">
 						<a class="logo" href="#woodien"><img src="img/logo.png" alt=""></a>
-						<div class="nav-item grid-x">
-							
-								<a class="nav-item yell" href="#home">Home</a>
-								<a class="nav-link" href="#about">About Us</a>
-								<a class="nav-link" href="#how">How it works</a>
-								<a class="nav-link" href="#categoris">Categories</a>
-								<a class="nav-link" href="#testimony">Testimony</a>
-								<a href="#sign" class=" nav-btn"><span class="nav-btn-sign">SIGN UP</span></a>
-							
+						<div class="topnav-item grid-x">
+							<div id="myLinks">
+								<a class="topnav-link yell" href="#home">Home</a>
+								<a class="topnav-link" href="#about">About Us</a>
+								<a class="topnav-link" href="#how">How it works</a>
+								<a class="topnav-link" href="#categoris">Categories</a>
+								<a class="topnav-link" href="#testimony">Testimony</a>
+								<a href="#sign" class="topnav-btn"><span class="topnav-btn-sign">SIGN UP</span></a>
+							</div>
+							<a href="javascript:vold(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
 						</div>
 						
 					</div>
 				</nav>
 			</div>
 		</header>
-		<div class="main grid-x">
+		<div class="main ">
 			<div class="main-item">
-				<p class="main-item-title">Are you looking for <span>woodden furniture</span> for your place?</p>
-				<p class="main-item-description">This is the Right Place</p>
+				<p class="main-item-title"><%= one %> <span><%= one1 %> </span><%= one2 %> </p>
+				<p class="main-item-description"><%= one3 %> </p>
 				<a href="#furniture" class="main-item-btn"><span class="main-item-btn-text">Explore Furniture</span></a>
 			</div>
 			<div class="main-image">
-				<div class="main-image-bg"></div>
-				<img src="img/Simple-modern-balcony-small-coffee-table-living-room-small-apartment-sofa-side-table-simple-home-bedroom 1.png"
-					alt="" class="main-image-coffe_table">
-				<img src="img/Group 25.png" alt="" class="main-image-logo">
+				<img class="img" src="<%= main %> " alt="">
 			</div>
 		</div>
 	</div>
@@ -58,23 +56,19 @@
 		</div>
 		<div class="conteiner-description">
 			<div class="conteiner-description-image">
-				<div class="rect"></div>
-				<img src="img/Kalmar-Home-7-pc-Acacia-Wood-Salad-Bowl-Set 1.png" alt="" class="kalmar">
-				<img class="flower" src="img/Group 25.png" alt="">
+				<img src="<%= aboutUs %> " alt="">
 			</div>
 			<div class="conteiner-description-item">
-				<p class="conteiner-description-item-title">WOODIES<span>is the</span>home of modern wooden furniture
+				<p class="conteiner-description-item-title"><%= second %> <span><%= second1 %> </span><%= second2 %> 
 				</p>
 
-				<p class="conteiner-description-text">the answer to your need for furniture with shapes, sizes and
-					colors. </p>
+				<p class="conteiner-description-text"><%= second3 %> </p>
 			</div>
 		</div>
 		<div class="conteiner-wroth">
 			<div class="conteiner-wroth-item">
-				<p class="conteiner-wroth-item-title"><span>Customized furniture made</span> just for you</p>
-				<p class="conteiner-wroth-item-text">Get it easy to adjust furniture to the shape and size of your
-					dwelling or business. </p>
+				<p class="conteiner-wroth-item-title"><span><%= second4 %> </span><%= second5 %> </p>
+				<p class="conteiner-wroth-item-text"><%= second6 %> </p>
 			</div>
 			<img class="spoon"
 				src="img/Script-Online-Ado-Beech-Steel-Spoon-Set-Of-3-52151704SD00001-PDP-Gallery-D-01 1.png"
@@ -87,82 +81,41 @@
 			<img src="icon/Group 28.png" alt="">
 			<p class="conteiner-title-name">How to custom</p>
 			<img src="icon/Line 1.png" alt="">
-			<p class="conteiner-title-about">ABOUT US</p>
+			<p class="conteiner-title-about">HOW IT WORKS</p>
 		</div>
 		<div class="custom-item grid-x">
 			<div class="custom-item-image">
-				<div class="custom-item-image-box">
-					<div class="custom-item-image-box-number grid-x">
-						<p class="num">1</p>
-						<img class="custom-item-image-box-number-img" src="img/Group.png" alt="">
-					</div>
-					<p class="custom-item-image-descliption top">Choose Design</p>
-				</div>
+				<img src="<%= miniPic %> " alt="">
 			</div>
 			<div class="custom-item-image">
-				<div class="custom-item-image-box">
-					<div class="custom-item-image-box-number grid-x">
-						<p class="num">2</p>
-						<img class="custom-item-image-box-number-img" src="img/Group_1.png" alt="">
-					</div>
-					<p class="custom-item-image-descliption">Area measuring</p>
-				</div>
+				<img src="<%= miniPic2 %>" alt="">
 			</div>
 			<div class="custom-item-image">
-				<div class="custom-item-image-box">
-					<div class="custom-item-image-box-number grid-x">
-						<p class="num">3</p>
-						<img class="custom-item-image-box-number-img" src="img/cost 1.png" alt="">
-					</div>
-					<p class="custom-item-image-descliption">Budgeting</p>
-				</div>
+				<img src="<%= miniPic3 %>" alt="">
 			</div>
 			<div class="custom-item-image">
-				<div class="custom-item-image-box">
-					<div class="custom-item-image-box-number grid-x">
-						<p class="num">4</p>
-						<img class="custom-item-image-box-number-img" src="img/Group_2.png" alt="">
-					</div>
-					<p class="custom-item-image-descliption">Production</p>
-				</div>
+				<img src="<%= miniPic4 %>" alt="">
 			</div>
 		</div>
+		<form method="post">
+			<button type="submit" class="custom-btn">
+				<a class="custom-btn-link" href="#get">Get Personalized Now</a>
+			</button>
+		</form>
 	</div>
 	<div class="categories">
 		<div class="conteiner-title">
-			<img src="/icon/Group 28.png" alt="">
-			<p class="conteiner-title-name">How to custom</p>
-			<img src="/icon/Line 1.png" alt="">
-			<p class="conteiner-title-about">ABOUT US</p>
+			<img src="icon/Group 28.png" alt="">
+			<p class="conteiner-title-name">What we have</p>
+			<img src="icon/Line 1.png" alt="">
+			<p class="conteiner-title-about">CATEGORIES</p>
 		</div>
 		<div class="categories-item grid-x">
-			<div class="categories-item-box">
-				<p class="categories-item-box-title">Desk</p>
-				<img src="img/Konfest-PNG-JPG-Image-Pic-Photo-Free-Download-Royalty-Unlimited-clip-art-sticker-tables-moveable-furniture-furnishing-fixtures-appliance-top-view-48 1.png" alt="" class="categories-item-box-image">
-				<a href="#shop now" class="categories-item-box-btn">Shop Now</a>
-			</div>
-			<div class="categories-item-box yell">
-				<p class="categories-item-box-title">Desk</p>
-				<img src="img/soft-pad-dining-chair-with-solid-oak-crossed-wood-legs-cool-grey-p1561-26034_zoom 1.png" alt="" class="categories-item-box-image sofa ">
-				<a href="#shop now" class="categories-item-box-btn top-1">Shop Now</a>
-			</div>
-			<div class="categories-item-box blue">
-				<p class="categories-item-box-title">Kitchenware</p>
-				<img src="img/fd2d95252c7fbc851e6dc7463e6b3284 1.png" alt="" class="categories-item-box-image kitchen ">
-				<a href="#shop now" class="categories-item-box-btn top">Shop Now</a>
-			</div>
-			<div class="pt">
-				<div class="categories-item-box">
-					<p class="categories-item-box-title">Kitchenware</p>
-					<img src="img/kissclipart-shelf-bookcase-png-clipart-bookshelf-bookcase-bcab65430cdd522a 1.png" alt="" class="categories-item-box-image shelf ">
-					<a href="#shop now" class="categories-item-box-btn top-2">Shop Now</a>
-				</div>
-				<div class="categories-item-box yell">
-					<p class="categories-item-box-title">Electronics</p>
-					<img src="img/electronics.png" alt="" class="categories-item-box-image elect ">
-					<a href="#shop now" class="categories-item-box-btn top-3">Shop Now</a>
-				</div>
-			</div>
+			<img class="categories-item-img" src="<%= categories %> " alt="">
+			<img class="categories-item-img" src="<%= categories2 %> " alt="">
+			<img class="categories-item-img" src="<%= categories3 %> " alt="">
+			<img class="categories-item-img" src="<%= categories4 %> " alt="">
+			<img class="categories-item-img" src="<%= categories5 %> " alt="">
 		</div>
 	</div>
 	<div class="test">
@@ -181,17 +134,17 @@
 	  		<div class="swiper-slide">
 				<div class="swiper-cont">
 					<div class="swiper-cont-image">
-						<img class="radius" src="img/apartment-bed-bedroom-271624 1.png" alt="">
-						<img class="radius" src="img/breakfast-contemporary-daylight-154161 1.png" alt="">
+						<img class="radius" src="<%= comment1Pic %> " alt="">
+						<img class="radius" src="<%= comment1Pic2 %> " alt="">
 					</div>
 					<div class="swiper-cont-box">
 						<img src="icon/Group 55.png" alt="" class="stars">
 						<p class="swiper-cont-box-discliption">
-							My experience with WOODIES is a complete success, from customed furniture, range of product, modern design, purchasing experience, the delivery and newsletter. Litterally everything is great. Thank you!
+							<%= comment1 %> 
 						</p>
 						<div class="swiper-cont-box-logo">
-							<img class="women" src="icon/woman-taking-selfie-while-smiling-1310522 1.png" alt="">
-							<p class="name">Sandra Dewi Jakarta Selatan</p>
+							<img class="women" src="<%= comment1Pic3 %> " alt="">
+							<p class="name"><%= comment1Name %> </p>
 						</div>
 					</div>
 				</div>
@@ -199,17 +152,17 @@
 			<div class="swiper-slide">
 				<div class="swiper-cont">
 					<div class="swiper-cont-image">
-						<img class="radius" src="img/apartment-bed-bedroom-271624 1.png" alt="">
-						<img class="radius" src="img/breakfast-contemporary-daylight-154161 1.png" alt="">
+						<img class="radius" src="<%= comment2Pic %>" alt="">
+						<img class="radius" src="<%= comment2Pic2 %>" alt="">
 					</div>
 					<div class="swiper-cont-box">
 						<img src="icon/Group 55.png" alt="" class="stars">
 						<p class="swiper-cont-box-discliption">
-							My experience with WOODIES is a complete success, from customed furniture, range of product, modern design, purchasing experience, the delivery and newsletter. Litterally everything is great. Thank you!
+							<%= comment2 %> 
 						</p>
 						<div class="swiper-cont-box-logo">
-							<img class="women" src="icon/woman-taking-selfie-while-smiling-1310522 1.png" alt="">
-							<p class="name">Sandra Dewi Jakarta Selatan</p>
+							<img class="women" src="<%= comment2Pic3 %>" alt="">
+							<p class="name"><%= comment2Name %> </p>
 						</div>
 					</div>
 				</div>
@@ -217,17 +170,17 @@
 			<div class="swiper-slide">
 				<div class="swiper-cont">
 					<div class="swiper-cont-image">
-						<img class="radius" src="img/apartment-bed-bedroom-271624 1.png" alt="">
-						<img class="radius" src="img/breakfast-contemporary-daylight-154161 1.png" alt="">
+						<img class="radius" src="<%= comment3Pic %>" alt="">
+						<img class="radius" src="<%= comment3Pic2 %>" alt="">
 					</div>
 					<div class="swiper-cont-box">
 						<img src="icon/Group 55.png" alt="" class="stars">
 						<p class="swiper-cont-box-discliption">
-							My experience with WOODIES is a complete success, from customed furniture, range of product, modern design, purchasing experience, the delivery and newsletter. Litterally everything is great. Thank you!
+							<%= comment3 %> 
 						</p>
 						<div class="swiper-cont-box-logo">
-							<img class="women" src="icon/woman-taking-selfie-while-smiling-1310522 1.png" alt="">
-							<p class="name">Sandra Dewi Jakarta Selatan</p>
+							<img class="women" src="<%= comment3Pic3 %>" alt="">
+							<p class="name"><%= comment3Name %> </p>
 						</div>
 					</div>
 				</div>
@@ -235,17 +188,17 @@
 			<div class="swiper-slide">
 				<div class="swiper-cont">
 					<div class="swiper-cont-image">
-						<img class="radius" src="img/apartment-bed-bedroom-271624 1.png" alt="">
-						<img class="radius" src="img/breakfast-contemporary-daylight-154161 1.png" alt="">
+						<img class="radius" src="<%= comment4Pic %>" alt="">
+						<img class="radius" src="<%= comment4Pic2 %>" alt="">
 					</div>
 					<div class="swiper-cont-box">
 						<img src="icon/Group 55.png" alt="" class="stars">
 						<p class="swiper-cont-box-discliption">
-							My experience with WOODIES is a complete success, from customed furniture, range of product, modern design, purchasing experience, the delivery and newsletter. Litterally everything is great. Thank you!
+							<%= comment4 %> 
 						</p>
 						<div class="swiper-cont-box-logo">
-							<img class="women" src="icon/woman-taking-selfie-while-smiling-1310522 1.png" alt="">
-							<p class="name">Sandra Dewi Jakarta Selatan</p>
+							<img class="women" src="<%= comment4Pic3 %>" alt="">
+							<p class="name"><%= comment4Name %> </p>
 						</div>
 					</div>
 				</div>
@@ -255,8 +208,7 @@
 		<div class=" round swiper-pagination"></div>
 	
 		<!-- If we need navigation buttons -->
-		<div ><img class="but swiper-button-prev" src="icon/Group 58.png" alt=""></div>
-		<div ><img class="but swiper-button-next" src="icon/Group 57.png" alt=""></div>
+	
   
 	<!-- If we need scrollbar -->
 		
@@ -269,7 +221,7 @@
 						<p class="p-2">monthly digest of the new WOODIES products, hot offers, and resources.</p></div>
 				  <div class="subscribe-input">
 					<form method="post">
-						<input id="myInput" name="mail" class="input" placeholder="Your email address" type="text">
+						<input id="myInput" class="input" name="email" placeholder="Your email address" type="text">
 						<button type="submit" class="subscrine-btn">Subscribe</button>
 					 </form>
 				  </div>
@@ -277,35 +229,48 @@
 			<div class="footer-item">
 		 		<img class='line-5' src="icon/Line 5.png" alt="">
 				<div class="footer-item-box">
-					<div class="footer-item-box-logo grid-y">
+					<div class="footer-item-box-logo">
 						<img src="img/logo.png" alt="">
 						<a class="footer-link" href="">(012) 8967453</a>
 						<a class="footer-link" href="">woodies@gmail.com</a>
 						<a class="footer-link" href="">Jakarta, Indonesia</a>
 					</div>
-					<div class="footer-item-box-col grid-y">
+
+					<div class="footer-item-box-col">
 						<p class="footer-item-col-title">Product</p>
+						<button class="accordion" style="display:none">Product</button>
+						<div class="panel" >
 						<a class="footer-link" href="">Furnitures</a>
 						<a class="footer-link" href="">Packages</a>
 						<a class="footer-link" href="">Services</a>
+						</div>
 					</div>
-					<div class="footer-item-box-col grid-y">
-						<p class="footer-item-col-title">Resources</p>
-						<a class="footer-link" href="">Blog</a>
-						<a class="footer-link" href="">FAQs</a>
-						<a class="footer-link" href="">Contact Us</a>
+					<div class="footer-item-box-col">
+						<p class="footer-item-col-title">Product</p>
+						<button class="accordion" style="display:none">Product</button>
+						<div class="panel" >
+						<a class="footer-link" href="">Furnitures</a>
+						<a class="footer-link" href="">Packages</a>
+						<a class="footer-link" href="">Services</a>
+						</div>
 					</div>
-					<div class="footer-item-box-col grid-y">
-						<p class="footer-item-col-title">Company</p>
-						<a class="footer-link" href="">About Us</a>
-						<a class="footer-link" href="">Jobs</a>
-						<a class="footer-link" href="">Our Team</a>
+					<div class="footer-item-box-col">
+						<p class="footer-item-col-title">Product</p>
+						<button class="accordion" style="display:none">Product</button>
+						<div class="panel" >
+						<a class="footer-link" href="">Furnitures</a>
+						<a class="footer-link" href="">Packages</a>
+						<a class="footer-link" href="">Services</a>
+						</div>
 					</div>
-					<div class="footer-item-box-col grid-y">
-						<p class="footer-item-col-title">Follow Us</p>
-						<a class="footer-link" href="">Facebook</a>
-						<a class="footer-link" href="">Instagram</a>
-						<a class="footer-link" href="">Twitter</a>
+					<div class="footer-item-box-col">
+						<p class="footer-item-col-title">Product</p>
+						<button class="accordion" style="display:none">Product</button>
+						<div class="panel" >
+						<a class="footer-link" href="">Furnitures</a>
+						<a class="footer-link" href="">Packages</a>
+						<a class="footer-link" href="">Services</a>
+						</div>
 					</div>
 				</div>
 			</div>
