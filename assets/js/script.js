@@ -21,25 +21,11 @@ let swiper = new Swiper('.swiper', {
     },
   });
   function myFunction() {
-    var x = document.getElementById("myLinks");
+    var x = document.querySelector(".myLinksBurger");
     if (x.style.display === "flex") {
-      x.style.display = "none";
+      x.style.display = null;
     } else {
       x.style.display = "flex";
     }
-    console.log(x)
-  }
-  var acc = document.getElementsByClassName("accordion");
-  var i;
-
-  for (i = 0; i < acc.length; i++) {
-    acc[i].addEventListener("click", function() {
-      this.classList.toggle("active");
-      var panel = this.nextElementSibling;
-      if (panel.style.display === "block") {
-        panel.style.display = "none";
-      } else {
-        panel.style.display = "block";
-      }
-    });
+    
   }
