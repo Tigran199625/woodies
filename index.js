@@ -7,8 +7,9 @@ app.set("view engine", "ejs");
 
 const { mailingUsers } = require('./models');
 const { text } = require('./models');
-const { imgUrl } = require('./models')
+const { imgUrl } = require('./models');
 const { response, request } = require("express");
+const { categories } = require('./models');
 
 
 app.use(express.static(__dirname + "/assets"));
@@ -22,7 +23,7 @@ app.post("/", urlencodedParser, (req, res) => {
             console.log(err)
         }
     });
-    res.send("Yout subscribe is done!")
+    res.send("Your subscribe is done!")
 })
 
 mailingUsers.sync().then((data) => {
@@ -43,6 +44,11 @@ imgUrl.sync().then((data) => {
     console.log("Erooor");
 });
 
+categories.sync().then((data) => {
+    console.log("Table 'categories' has been created");
+}).catch((err) => {
+    console.log("Erooor");
+});
 
 app.get("/", async (req, res) => {
 
@@ -52,9 +58,11 @@ app.get("/", async (req, res) => {
 
     const a = await text.findAll();
     const b = await imgUrl.findAll();
+    const Categories = await categories.findAll()
 
     res.render('main', {
         // top part
+        a : Categories,
         one : a[0].text,
         one1 : a[1].text,
         one2 : a[2].text,

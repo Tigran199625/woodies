@@ -1,0 +1,10 @@
+<% for( let n = 0; n < a.length; n++ ) { %>
+
+    <div class="<%= a[n].blockName %> ">
+        <p class="categories-item-block-title"><%= a[n].titleName %></p>
+        <img class="<%= a[n].imgClass %> " src="<%= a[n].imgPath %>" alt="" class="categories-item-block-image">
+        <form class="post" method="post">
+            <button class="post-btn" type="submit">Shop now</button>
+        </form>
+    </div>
+<% } %>
