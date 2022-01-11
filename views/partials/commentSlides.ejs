@@ -1,0 +1,22 @@
+<% for( let n = 0; n < c.length; n++ ) { %>
+
+    <div class="swiper-slide">
+        <div class="swiper-cont">
+            <div class="swiper-cont-image">
+                <img class="radius" src="<%- d[n].picPath1 %> " alt="">
+                <img class="radius" src="<%- d[n].picPath2 %> " alt="">
+            </div>
+            <div class="swiper-cont-box">
+                <img src="<%- d[n].starsPic %> " alt="" class="stars">
+                <p class="swiper-cont-box-discliption">
+                    <%- d[n].comment %> 
+                </p>
+                <div class="swiper-cont-box-logo">
+                    <img class="women" src="<%- d[n].userPic %> " alt="">
+                    <p class="name"><%- d[n].userName %> </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<% } %>
