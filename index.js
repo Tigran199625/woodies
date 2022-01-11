@@ -10,6 +10,8 @@ const { text } = require('./models');
 const { imgUrl } = require('./models');
 const { response, request } = require("express");
 const { categories } = require('./models');
+const { steps } = require('./models');
+
 
 
 app.use(express.static(__dirname + "/assets"));
@@ -50,6 +52,12 @@ categories.sync().then((data) => {
     console.log("Erooor");
 });
 
+steps.sync().then((data) => {
+    console.log("Table 'steps' has been created");
+}).catch((err) => {
+    console.log("Erooor");
+});
+
 app.get("/", async (req, res) => {
 
     // const b = await text.findOne({where: {partName: 'a4'}})
@@ -59,10 +67,12 @@ app.get("/", async (req, res) => {
     const a = await text.findAll();
     const b = await imgUrl.findAll();
     const Categories = await categories.findAll()
+    const Steps = await steps.findAll()
 
     res.render('main', {
         // top part
         a : Categories,
+        b : Steps,
         one : a[0].text,
         one1 : a[1].text,
         one2 : a[2].text,
